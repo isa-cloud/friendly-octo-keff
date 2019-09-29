@@ -1,0 +1,38 @@
+#logout{
+    position: absolute;
+    right:10px;
+    top: 85px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000;
+}
+
+#logout:hover{
+    color: #168c30;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    }
+
+/* Trick: */
+body {
+  position: relative;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 50px; /* Set same as footer's height */
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    
+}
+

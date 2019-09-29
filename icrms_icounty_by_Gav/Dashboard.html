@@ -1,0 +1,323 @@
+<html>
+    <head>
+        <title> dashboard county </title>
+        <link href="bootstrapp/css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="loginpage.css">
+        <link rel="stylesheet" type="text/css" href="dashboard.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="https://kit.fontawesome.com/a506d74fb5.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="jquery/jquery.js"></script>
+        <script type="text/javascript" src="bootstrapp/js/bootstrap.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+
+            /* Create two equal columns that floats next to each other */
+            .column {
+              float: left;
+              width: 30%;
+              padding: 10px;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            /* Style the buttons */
+            .btn {
+              border: none;
+              outline: none;
+              padding: 12px 16px;
+              background-color: #f1f1f1;
+              cursor: pointer;
+            }
+
+            .btn:hover {
+              background-color: #ddd;
+            }
+
+            .btn.active {
+              background-color: #168c30;
+              color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-success" >
+          <a class="navbar-brand "  href="#">
+              <img src="Capture.JPG" class="logo">              
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">            
+          </button>
+          
+              <ul class="navbar-nav mx-auto">
+              <li class="nav-item active text-center">
+                <a class="nav-link" id="title" href="index.html"> iCounty <span class="sr-only">(current)</span></a>
+                
+                 
+              </li>             
+                
+            </ul>
+            
+            <link href="bootstrapp/css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="loginpage.css">
+        <script src="https://kit.fontawesome.com/a506d74fb5.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="jquery/jquery.js"></script>
+        <script type="text/javascript" src="bootstrapp/js/bootstrap.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"><span class="navbar-text ml-auto">
+                <img src="index.png" class="logo" alt="kenyan flag" />
+            </span>
+          
+        </nav>
+        <a href="logout.php" id="logout"> logout </a>
+        <br>
+        <h1> Choose your county </h1>
+            <div id="btnContainer">
+              <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button>
+              <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+            </div>
+            <br>
+
+            <div class="row">
+              
+              <div class="column" style="background-color:#bbb;">
+                <h2> Mombasa </h2>
+                <p> county 001 </p>
+              </div>
+                   <div class="column" style="background-color:#ccc;">
+                <h2> Kwale </h2>
+                <p> county 002 </p>
+              </div>
+              <div class="column" style="background-color:#ddd;">
+                <h2> Kilifi </h2>
+                <p> county 003 </p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Tana River</h2>
+                <p>county 004</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Lamu</h2>
+                <p>county 005</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Taita-Taveta</h2>
+                <p>county 006</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Garissa</h2>
+                <p>county 007</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Wajir</h2>
+                <p>county 008</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Mandera</h2>
+                <p>county 009</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Marsabit</h2>
+                <p>county 010</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Isiolo</h2>
+                <p>county 011</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Meru</h2>
+                <p>county 012</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Tharaka-Nithi</h2>
+                <p>county 013</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Embu</h2>
+                <p>county 014</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Kitui</h2>
+                <p>county 015</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Machakos</h2>
+                <p>county 016</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Makueni</h2>
+                <p>county 017</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Nyandarua</h2>
+                <p>county 018</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Nyeri</h2>
+                <p>county 019</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Kirinyaga</h2>
+                <p>county 020</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Murang'a</h2>
+                <p>county 021</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Kiambu</h2>
+                <p>county 022</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Turkana</h2>
+                <p>county 023</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>West Pokot</h2>
+                <p>county 024</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Samburu</h2>
+                <p>county 025</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Trans-Nzoia</h2>
+                <p>county 026</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Uasin Gishu</h2>
+                <p>county 027</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Elgeyo-Marakwet</h2>
+                <p>county 028</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Nandi</h2>
+                <p>county 029</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Baringo</h2>
+                <p>county 030</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Laikipia</h2>
+                <p>county 031</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Nakuru</h2>
+                <p>county 032</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Narok</h2>
+                <p>county 033</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Kajiado</h2>
+                <p>county 034</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Kericho</h2>
+                <p>county 035</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Bomet</h2>
+                <p>county 036</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Kakamega</h2>
+                <p>county 037</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Vihiga</h2>
+                <p>county 038</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Bungoma</h2>
+                <p>county 039</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Busia</h2>
+                <p>county 040</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Siaya</h2>
+                <p>county 041</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Kisumu</h2>
+                <p>county 042</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Homa Bay</h2>
+                <p>county 043</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Migori</h2>
+                <p>county 044</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Kisii</h2>
+                <p>county 045</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Nyamira</h2>
+                <p>county 046</p>
+              </div>
+                <div class="column" style="background-color:#ddd;">
+                <h2>Nairobi</h2>
+                <p>county 047</p>
+              </div>
+            </div>
+            
+            <!-- Page Footer -->
+        <div class="footer">
+              <p>© Kenya Revenue Authority 2019</p>
+        </div>
+            
+               
+           
+
+            <script>
+                
+            // Get the elements with class="column"
+            var elements = document.getElementsByClassName("column");
+
+            // Declare a loop variable
+            var i;
+
+            // List View
+            function listView() {
+              for (i = 0; i < elements.length; i++) {
+                elements[i].style.width = "100%";
+              }
+            }
+
+            // Grid View
+            function gridView() {
+              for (i = 0; i < elements.length; i++) {
+                elements[i].style.width = "50%";
+              }
+            }
+
+            /* Optional: Add active class to the current button (highlight it) */
+            var container = document.getElementById("btnContainer");
+            var btns = container.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
+
+        
+        
+        
+    </body>
+</html>

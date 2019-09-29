@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Create_an_account</title>
+        <link href="bootstrapp/css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="loginpage.css">
+        <link rel="stylesheet" type="text/css" href="create_account.css">
+        <script type="text/javascript" src="jquery/jquery.js"></script>
+        <script type="text/javascript">
+            function showMessage(){
+				alert("Successfully registered");
+            }</script>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link href="bootstrapp3/fonts/glyphicons-halflings-regular.eot">
+       
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-success" >
+          <a class="navbar-brand "  href="#">
+              <img src="Capture.JPG" class="logo">              
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">            
+          </button>
+          
+              <ul class="navbar-nav mx-auto">
+              <li class="nav-item active text-center">
+                <a class="nav-link" id="title" href="index.html"> iCounty <span class="sr-only">(current)</span></a>
+                
+                 
+              </li>             
+                
+            </ul>
+            
+            <span class="navbar-text ml-auto">
+                <img src="index.png" class="logo" alt="kenyan flag" />
+            </span>
+          
+        </nav>
+        <div class="container">
+            <h2>Account creation</h2>
+            <div class="card" >
+                <div class="card-body" id="h1">Please fill in your details</div><br>
+        <!-- Card body -->
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-lg-6 offset-3">
+                        <form>
+                    <div class="form-group">
+                        <input type="number" name="ID" class="form-control" placeholder="please key in your National ID number">
+                            </div>
+                    <div class="form-group">
+                        <input type="email"name="" class="form-control"  placeholder="name@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="" class="form-control"placeholder="Confirm email address">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control"  name=""placeholder="Password">
+                    </div>
+                    <div>
+                        <input type="button" name="Login" id="button_register" value="Register" onclick= "showMessage()" href="loginpage.html"/>
+                    </div>
+                </form>
+                    </div>
+                </div>
+            </div>
+                
+            
+            </div>
+        </div>
+        
+        <!-- Page Footer -->
+        <div class="footer"class="footer">
+              <p>© Kenya Revenue Authority 2019</p>
+            </div>
+    </body>
+
+
+</html>

@@ -1,0 +1,45 @@
+.img-rounded{
+    border-radius: 10px;
+    
+}
+
+.img-rounded:hover{
+    
+    background-color: #fff;
+    transition: transform .6s; /* Animation */
+    width: 359px;
+    height: 199px;
+    
+}
+
+.img-rounded:hover {
+    transform: scale(1.02); /* (110% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#signin{
+    position:fixed;
+    right:10px;
+    top: 85px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000;
+}
+
+#signin:hover{
+    color: #168c30;
+}
+
+#createe{
+    position: fixed;
+    top: 85px;
+    right: 60px;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: #000;
+}
+
+#createe:hover{
+    color: #168c30;  
+}

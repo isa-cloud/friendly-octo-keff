@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>pay your land rates</title>
+        <link href="bootstrapp/css/bootstrap.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="loginpage.css">
+        <link rel="stylesheet" type="text/css" href="paylandrates.css">
+        <link rel="stylesheet" type="text/css" href="create_account.css">
+        <script src="https://kit.fontawesome.com/a506d74fb5.js" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function showMessage(){
+				alert("Thank you for paying land rates");
+        }</script>
+        <script type="text/javascript" src="jquery/jquery.js"></script>
+        <script type="text/javascript" src="bootstrapp/js/bootstrap.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-success" >
+          <a class="navbar-brand "  href="#">
+              <img src="Capture.JPG" class="logo">              
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">            
+          </button>
+          
+              <ul class="navbar-nav mx-auto">
+              <li class="nav-item active text-center">
+                <a class="nav-link" id="title" href="index.html">iCounty<span class="sr-only">(current)</span></a>
+                
+                 
+              </li>             
+                
+            </ul>
+            
+            <span class="navbar-text ml-auto">
+                <img src="index.png" class="logo" alt="kenyan flag" />
+            </span>
+        </nav>
+        
+        <!-- Card header -->
+        <div class="container">
+            <h2>Land Rates</h2>
+            <div class="card" >
+                <div class="card-body" id="h3">Pay for your plot online</div>
+                <!-- Card body -->
+                <div class="body">
+                    <div class="row">
+                        <div class="col-lg-6 offset-3">
+                            <form>
+                            <div class="form-group">
+                                <input type="number" name="" class="form-control" placeholder="Enter plot no/I.R no/Block no">
+                                </div>
+                            <div class="form-group">
+                                <input type="text" name="" class="form-control"
+                                placeholder="Enter name of owner">
+                                </div>
+                            <div class="form-group">
+                                <input type="number" name="" class="form-control"
+                                       placeholder="Enter KRA pin">
+                                </div>
+                            <div class="form-group">
+                                <input type="text"name="" class="form-control"
+                                       placeholder="Enter the area(Ha)">
+                                </div>
+                        <button type="button" name="back" id="button_registerr" value="back">Back</button>
+                               
+                        <button type="button"name="submit" onclick="showMessage()" id="button_register" value="submit">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page footer -->
+        <div class="footer"class="footer">
+              <p>© Kenya Revenue Authority 2019</p>
+            </div>
+    </body>
+</html>
